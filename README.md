@@ -7,6 +7,6 @@ Works ONLY on Raspberry Pi.
 Installation
 ----------------------
 Run the following commands in the terminal:
-apt-get install git
-git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
-sudo sh ./ParssecIntegration.sh
+1. apt-get install git
+  2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
+  3. sudo sh ./ParssecIntegration.sh
