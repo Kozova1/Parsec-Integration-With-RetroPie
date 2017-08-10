@@ -1,4 +1,4 @@
-ba# Parsec-Integration-With-RetroPie
+# Parsec-Integration-With-RetroPie
 Description
 ----------------------
 This is a script for integrating Parsec with RetroPie.
