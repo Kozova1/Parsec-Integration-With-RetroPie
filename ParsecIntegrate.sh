@@ -6,5 +6,5 @@ read -p "Type your servers ID on the server console tab"
 cd /home/pi/RetroPie/roms/ports
 mkdir -p /home/pi/RetroPie/roms/ports/Parsec.sh
 echo -n "parsec server_id=" > /home/pi/RetroPie/roms/ports/Parsec.sh
-echo $answer3 > /home/pi/RetroPie/roms/ports/Parsec.sh
+echo $REPLY > /home/pi/RetroPie/roms/ports/Parsec.sh
 parsec
