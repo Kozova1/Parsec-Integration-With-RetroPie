@@ -3,5 +3,7 @@ echo "Made by Kozova1"
 echo "Type your servers ID its on the server console tab"
 read REPLY
 cd ~pi/RetroPie/roms/ports/
-sudo echo -n "parsec server_id=$REPLY">Parsec.sh
+sudo echo -n "parsec server_id=$REPLY">Parsec.sh\
+sudo modprobe -r xpad
+sudo apt-get install xboxdrv
 parsec
