@@ -2,6 +2,7 @@ echo "This script will integrate Parsec with RetroPie it will appear within Retr
 echo "Made by Kozova1"
 echo "Type your servers ID its on the server console tab"
 read REPLY
+unzip themes.zip
 mv --force themes /etc/emulationstation/themes
 mkdir -p ~pi/RetroPie/roms/parsec
 cd ~pi/RetroPie/roms/parsec/
