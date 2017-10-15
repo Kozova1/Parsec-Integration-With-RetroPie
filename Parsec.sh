@@ -6,7 +6,7 @@ unzip themes.zip
 sudo rsync -a -v ~pi/Parsec-Integration-With-RetroPie/themes/ /etc/emulationstation/
 mkdir -p ~pi/RetroPie/roms/parsec
 cd ~pi/RetroPie/roms/parsec/
-sudo echo -n "parsec server_id=$REPLY">Parsec.sh\
+sudo echo -n "parsec server_id=$REPLY">Parsec.sh
 sudo modprobe -r xpad
 sudo apt-get install xboxdrv
 parsec
