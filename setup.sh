@@ -6,7 +6,7 @@ sudo chmod +x Parsec.sh
 sudo rm -rf /etc/emulationstation/themes/carbon/parsec
 sudo rm -rf /opt/retropie/configs/all/emulationstation/themes/carbon/parsec
 sudo mv --force /opt/retropie/configs/all/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg.backup
-sudo mv --force es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
+sed -i '$e cat parsec.cfg' /opt/retropie/configs/all/emulationstation/es_systems.cfg
 echo "Parsec entry added to EmulationStation"
 sudo mkdir -p ~pi/RetroPie/roms/ports
 echo "Type your servers ID its on the server console tab"
@@ -18,7 +18,10 @@ mkdir -p ~pi/RetroPie/roms/parsec
 cd ~pi/RetroPie/roms/parsec/
 sudo echo -n "parsec server_id=$REPLY">Parsec.sh
 echo "ROM File written"
-sudo modprobe -r xpad
-sudo apt-get install xboxdrv
+if [ $1 != nodrv]
+then
+  sudo modprobe -r xpad
+  sudo apt-get install xboxdrv
+fi
 echo "Unneccessary driver removed, Installed better one. Starting parsec for the 1st time..."
 parsec
