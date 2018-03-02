@@ -40,3 +40,7 @@ Run the following commands in the terminal:
   Contact me if you have any concerns / problems /Issues
   ------------------------------------------------------
   Discord: Kozova1 #1926
+
+Credits:
+----------------
+CBNathanael for helping me figure out some parts of the script
