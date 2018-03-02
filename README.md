@@ -18,6 +18,8 @@ Run the following commands in the terminal:
   4. sudo bash setup.sh
   5. Follow the instructions on screen and when prompted enter your server id.
   6. After the script finishes it's work run the following command: parsec
+  7. Login with your parsecgaming.com account and make sure to select "Remember Me".
+  8. Now you can run Parsec via RetroPie! Have fun gaming!
   
   Contact me if you have any concerns / problems /Issues
   ------------------------------------------------------
