@@ -3,6 +3,9 @@ Description
 ----------------------
 This is a script for integrating Parsec with RetroPie.
 Works ONLY on Raspberry Pi. 
+This one should work with RetroPie 4.3
+If you have any problems contact me @ Discord Kozova1#1926
+I usually don't reply in github.
 
 Installation
 ----------------------
@@ -14,7 +17,8 @@ Run the following commands in the terminal:
   3. cd Parsec-Integration-With-RetroPie
   4. sudo bash setup.sh
   5. Follow the instructions on screen and when prompted enter your server id.
+  6. After the script finishes it's work run the following command: parsec
   
-  Contact me if you have any concerns / problems 
+  Contact me if you have any concerns / problems /Issues
   ------------------------------------------------------
   Discord: Kozova1 #1926
