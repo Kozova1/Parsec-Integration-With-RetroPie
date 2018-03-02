@@ -6,7 +6,8 @@ Works ONLY on Raspberry Pi.
 This one should work with RetroPie 4.3
 If you have any problems contact me @ Discord Kozova1#1926
 I usually don't reply in github.
-
+Please Backup your system before running this script
+---------------------------------------
 Installation
 ----------------------
 First find out your server id by right-clicking the parsec tray icon on the server and ticking "Show Console".
@@ -20,6 +21,15 @@ Run the following commands in the terminal:
   6. After the script finishes it's work run the following command: parsec
   7. Login with your parsecgaming.com account and make sure to select "Remember Me".
   8. Now you can run Parsec via RetroPie! Have fun gaming!
+  
+  
+  DISCLAIMER
+  ---------------
+  I am not responsible for any loss of data, hardware etc.
+  You take full responsibility.
+  
+  THIS SCRIPT CHANGES A DRIVER IN YOUR SYSTEM
+  -----------------------------------------------
   
   Contact me if you have any concerns / problems /Issues
   ------------------------------------------------------
