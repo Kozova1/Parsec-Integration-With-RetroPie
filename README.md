@@ -1,4 +1,7 @@
 # Parsec-Integration-With-RetroPie
+Please read ALL of the information here
+---------------
+
 Description
 ----------------------
 This is a script for integrating Parsec with RetroPie.
@@ -31,6 +34,8 @@ Run the following commands in the terminal:
   
   THIS SCRIPT CHANGES A DRIVER IN YOUR SYSTEM
   -----------------------------------------------
+  If you don't want the driver changed run this command instead of step 4:
+  sudo bash setup.sh nodrv
   
   Contact me if you have any concerns / problems /Issues
   ------------------------------------------------------
