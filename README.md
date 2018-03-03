@@ -37,6 +37,11 @@ Run the following commands in the terminal:
   If you don't want the driver changed run this command instead of step 4:
   sudo bash setup.sh nodrv
   
+  You can also add the following arguments to the script to disable editing the theme and disable installing parsec, in case you already installed it:
+  notheme
+  noparsec
+  
+  
   Contact me if you have any concerns / problems /Issues
   ------------------------------------------------------
   Discord: Kozova1 #1926
