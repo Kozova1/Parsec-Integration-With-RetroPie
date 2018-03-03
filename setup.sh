@@ -7,8 +7,8 @@ echo "Made by Kozova1"
 
 
       sudo rm -rf /etc/emulationstation/themes/carbon/parsec
-      sudo rm -rf /opt/retropie/configs/all/emulationstation/themes/carbon/parsec
-sudo cp --force /opt/retropie/configs/all/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg.backup
+      sudo rm -rf ~pi/.emulationstation/themes/carbon/parsec
+sudo cp --force ~pi/.emulationstation/es_systems.cfg ~pi/.emulationstation/es_systems.cfg.backup
 sed -i '$e cat parsec.cfg' /opt/retropie/configs/all/emulationstation/es_systems.cfg
 echo "Parsec entry added to EmulationStation"
 sudo mkdir -p ~pi/RetroPie/roms/ports
