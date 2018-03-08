@@ -14,8 +14,7 @@ Please Backup your system before running this script
 ---------------------------------------
 Installation
 ----------------------
-First find out your server id by right-clicking the parsec tray icon on the server and ticking "Show Console".
-the server id is in the console as APP.server_id = [number here] . You only need the number.
+First find out your server id by clicking on the Manage button under the wanted server name in the Parsec app, then look at the top-right corner of the popup, and there will be text like this: ID:[number here] . You only need the number, Which is your server ID.
 Run the following commands in the terminal:
   1. sudo apt-get install git
   2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
@@ -26,7 +25,6 @@ Run the following commands in the terminal:
   7. Login with your parsecgaming.com account and make sure to select "Remember Me".
   8. Now you can run Parsec via RetroPie! Have fun gaming!
   
-  
   DISCLAIMER
   ---------------
   I am not responsible for any loss of data, hardware etc.
@@ -35,12 +33,7 @@ Run the following commands in the terminal:
   THIS SCRIPT CHANGES A DRIVER IN YOUR SYSTEM
   -----------------------------------------------
   If you don't want the driver changed run this command instead of step 4:
-  sudo bash setup.sh nodrv
-  
-  You can also add the following arguments to the script to disable editing the theme and disable installing parsec, in case you already installed it:
-  notheme
-  noparsec
-  
+  sudo bash setup.sh -nodrv
   
   Contact me if you have any concerns / problems /Issues
   ------------------------------------------------------
