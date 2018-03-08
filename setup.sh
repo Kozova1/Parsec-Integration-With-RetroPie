@@ -3,9 +3,6 @@ echo "Made by Kozova1"
 
       wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
       sudo dpkg -i parsec-rpi.deb
-      sudo chmod +x Parsec.sh
-
-
       sudo rm -rf /etc/emulationstation/themes/carbon/parsec
       sudo rm -rf ~pi/.emulationstation/themes/carbon/parsec
 sudo cp --force ~pi/.emulationstation/es_systems.cfg ~pi/.emulationstation/es_systems.cfg.backup
@@ -24,10 +21,10 @@ cd ~pi/RetroPie/roms/parsec/
 sudo echo -n "parsec server_id=$REPLY">Parsec.sh
 echo "ROM File written"
 
-    if[ $1 != nodrv]
+    if[ $1 != "-nodrv"]
     then
     sudo apt-get install xboxdrv
+    echo "Unneccessary driver removed, Installed better one. Starting parsec for the 1st time..."
     fi
-
-echo "Unneccessary driver removed, Installed better one. Starting parsec for the 1st time..."
+    
 parsec
