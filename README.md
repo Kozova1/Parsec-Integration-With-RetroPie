@@ -18,7 +18,7 @@ First find out your server id by clicking on the Manage button under the wanted 
 
 ![image 1](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/server_id1.PNG)
 
-Then look at the top right corner in the promprt that pops up, and remember the number that's written there
+Then look at the top right corner in the prompt that pops up, and remember the number that's written there
 ![image 2](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/server_id2.PNG)
 
 
