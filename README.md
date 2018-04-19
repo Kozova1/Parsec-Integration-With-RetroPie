@@ -14,8 +14,14 @@ Please Backup your system before running this script
 ---------------------------------------
 Installation
 ----------------------
-![First find out your server id by clicking on the Manage button under the wanted server name in the Parsec app.](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/server_id1.PNG)
-![Then look at the top right corner in the promprt that pops up, and remember the number that's written there](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/server_id2.PNG)
+First find out your server id by clicking on the Manage button under the wanted server name in the Parsec app.
+
+![image 1](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/server_id1.PNG)
+
+Then look at the top right corner in the promprt that pops up, and remember the number that's written there
+![image 2](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/server_id2.PNG)
+
+
 Run the following commands in the terminal:
   1. sudo apt-get install git
   2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
