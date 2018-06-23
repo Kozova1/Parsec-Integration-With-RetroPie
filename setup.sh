@@ -21,7 +21,7 @@ cd ~pi/RetroPie/roms/parsec/
 sudo echo -n "parsec server_id=$REPLY">Parsec.sh
 echo "ROM File written"
 
-    if [ $1 != "-nodrv"]
+    if [ "$1" != "-nodrv"]
     then
     sudo apt-get install xboxdrv
     echo "Unneccessary driver removed, Installed better one. Starting parsec for the 1st time..."
