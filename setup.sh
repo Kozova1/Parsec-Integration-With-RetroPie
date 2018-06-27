@@ -1,30 +1,53 @@
 #!/bin/bash
+
+if [ ! -e ./parsec.cfg ]; then
+    echo "error: run this script from the Parsec-Integration-With-RetroPie directory"
+    exit 1
+fi
+
 echo "Made by Kozova1"
 
-      wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
-      sudo dpkg -i parsec-rpi.deb
-      sudo rm -rf /etc/emulationstation/themes/carbon/parsec
-      sudo rm -rf ~pi/.emulationstation/themes/carbon/parsec
-sudo cp --force ~pi/.emulationstation/es_systems.cfg ~pi/.emulationstation/es_systems.cfg.backup
-sudo cp --force /etc/emulationstation/es_systems.cfg /etc/emulationstation/es_systems.cfg.backup
-sed -i '$e cat parsec.cfg' ~pi/.emulationstation/es_systems.cfg
-sed -i '$e cat parsec.cfg' /etc/emulationstation/es_systems.cfg
-echo "Parsec entry added to EmulationStation"
-sudo mkdir -p ~pi/RetroPie/roms/ports
+wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
+sudo dpkg -i parsec-rpi.deb
+sudo rm -rf /etc/emulationstation/themes/carbon/parsec
+rm -rf ~pi/.emulationstation/themes/carbon/parsec
+
+if [ -e ~pi/.emulationstation/es_systems.cfg ]; then
+  # don't want to add it twice
+  if ! grep -q '<name>Parsec</name>' ~pi/.emulationstation/es_systems.cfg; then
+    sed -i '$e cat parsec.cfg' ~pi/.emulationstation/es_systems.cfg
+    echo "Parsec entry added to EmulationStation in ~pi"
+  fi
+fi
+
+if [ -e /etc/emulationstation/es_systems.cfg ]; then
+  # same as above: don't want to add it twice
+  if ! grep -q '<name>Parsec</name>' /etc/emulationstation/es_systems.cfg; then
+    sudo sed -i '$e cat parsec.cfg' /etc/emulationstation/es_systems.cfg
+    echo "Parsec entry added to EmulationStation in /etc"
+  fi
+fi
+
+if [ -d /etc/emulationstation/themes/carbon ]; then
+  sudo cp -Rf ./carbon/. /etc/emulationstation/themes/carbon/
+  echo "Carbon theme altered to fit Parsec in ~pi"
+fi
+if [ -d ~pi/.emulationstation/themes/carbon ]; then
+  cp -Rf ./carbon/. ~pi/.emulationstation/themes/carbon
+  echo "Carbon theme altered to fit Parsec in /etc"
+fi
+
 echo "Type your servers ID its on the server console tab"
 read REPLY
-sudo cp -Rf ~pi/Parsec-Integration-With-RetroPie/carbon/ /etc/emulationstation/themes/carbon/
-sudo cp -Rf ~pi/Parsec-Integration-With-RetroPie/carbon/ ~pi/.emulationstation/themes/carbon
-echo "Carbon theme altered to fit Parsec"
 mkdir -p ~pi/RetroPie/roms/parsec
 cd ~pi/RetroPie/roms/parsec/
-sudo echo -n "parsec server_id=$REPLY">Parsec.sh
+echo -n "parsec server_id=$REPLY">Parsec.sh
 echo "ROM File written"
 
-    if [ "$1" != "-nodrv"]
+if [ "$1" != "-nodrv" ]
     then
     sudo apt-get install xboxdrv
     echo "Unneccessary driver removed, Installed better one. Starting parsec for the 1st time..."
-    fi
-    
+fi
+
 parsec
