@@ -49,3 +49,4 @@ Run the following commands in the terminal:
 Credits:
 ----------------
 CBNathanael for helping me figure out some parts of the script
+DSandler for fixing the multiple entry bug
