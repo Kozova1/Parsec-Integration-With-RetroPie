@@ -35,19 +35,18 @@ Then look at the top right corner in the prompt that pops up, and remember the n
   7. Login with your parsecgaming.com account and make sure to select "Remember Me".
   8. Now you can run Parsec via RetroPie! Have fun gaming!
   
- # DISCLAIMER
+# DISCLAIMER
   I am not responsible for any loss of data, hardware etc.
   You take full responsibility.
   
- ##  THIS SCRIPT CHANGES A DRIVER IN YOUR SYSTEM
+##  THIS SCRIPT CHANGES A DRIVER IN YOUR SYSTEM
   If you don't want the driver changed run this command instead of step 4:
   sudo bash setup.sh -nodrv
   
-###  Contact me if you have any concerns / problems /Issues
+ ###  Contact me if you have any concerns / problems /Issues
  
   Discord: Kozova1 #1926
 
-Credits:
-----------------
+## Credits:
 CBNathanael for helping me figure out some parts of the script
 DSandler for fixing the multiple entry bug
