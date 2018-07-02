@@ -22,8 +22,19 @@ Then look at the top right corner in the prompt that pops up, and remember the n
 
 ![image 2](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/server_id2.PNG)
 
-
+## There are 2 methods to install this:
+### 1st method:
 ### Run the following commands in the terminal:
+
+  1. sudo bash <(curl -s https://github.com/Kozova1/Parsec-Integration-With-RetroPie/curlsetup.sh)
+  5. Follow the instructions on screen and when prompted enter your server id.
+  6. After the script finishes it's work run the following command: parsec
+  7. Login with your parsecgaming.com account and make sure to select "Remember Me".
+  8. Now you can run Parsec via RetroPie! Have fun gaming!
+  
+### 2nd method:
+### Run the following commands in the terminal:
+
   1. sudo apt-get install git
   2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
   3. cd Parsec-Integration-With-RetroPie
