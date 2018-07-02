@@ -5,9 +5,7 @@
 ## Description
 This is a script for integrating Parsec with RetroPie.
 Works ONLY on Raspberry Pi. 
-This one should work with RetroPie 4.3
 If you have any problems contact me @ Discord Kozova1#1926
-I usually don't reply in github.
 
 # Please Backup your system before running this script
 
