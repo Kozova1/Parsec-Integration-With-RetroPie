@@ -1,4 +1,4 @@
-# Parsec-Integration-With-RetroPie
+# A Parsec Integration With RetroPie Script
 ## Please read ALL of the information here
 
 
