@@ -43,7 +43,8 @@ Then look at the top right corner in the prompt that pops up, and remember the n
   If you don't want the driver changed run this command instead of step 4:
   sudo bash setup.sh -nodrv
   
- ###  Contact me if you have any concerns / problems /Issues
+
+###  Contact me if you have any concerns / problems /Issues
  
   Discord: Kozova1 #1926
 
