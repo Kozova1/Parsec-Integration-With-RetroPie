@@ -37,7 +37,7 @@ if [ -d ~pi/.emulationstation/themes/carbon ]; then
   echo "Carbon theme altered to fit Parsec in /etc"
 fi
 
-echo "Type your servers ID its on the server console tab"
+echo "Type your server ID now"
 read REPLY
 mkdir -p ~pi/RetroPie/roms/parsec
 cd ~pi/RetroPie/roms/parsec/
