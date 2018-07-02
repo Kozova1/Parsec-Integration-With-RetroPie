@@ -47,7 +47,9 @@ echo "ROM File written"
 if [ "$1" != "-nodrv" ]
     then
     sudo apt-get install xboxdrv
-    echo "Unneccessary driver removed, Installed better one. Starting parsec for the 1st time..."
+    echo "Unneccessary driver removed, Installed better one."
 fi
+
+echo " Starting parsec for the 1st time, please login and select Remember My Password"
 
 parsec
