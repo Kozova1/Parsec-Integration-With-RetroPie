@@ -41,10 +41,10 @@ Then look at the top right corner in the prompt that pops up, and remember the n
   3. cd Parsec-Integration-With-RetroPie
   4. sudo bash setup.sh -nodrv
 ```
-  5. Follow the instructions on screen and when prompted enter your server id.
-  6. After the script finishes it's work run the following command: `parsec`
-  7. Login with your parsecgaming.com account and make sure to select "Remember Me".
-  8. Now you can run Parsec via RetroPie! Have fun gaming!
+   Follow the instructions on screen and when prompted enter your server id.  
+   After the script finishes it's work run the following command: `parsec`  
+   Login with your parsecgaming.com account and make sure to select "Remember Me".  
+   Now you can run Parsec via RetroPie! Have fun gaming!  
   
 # DISCLAIMER
   I am not responsible for any loss of data, hardware etc.
