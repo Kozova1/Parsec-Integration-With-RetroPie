@@ -26,7 +26,7 @@ Then look at the top right corner in the prompt that pops up, and remember the n
 ### 1st method (Experimental, use 2nd method if this one doesn't work):
 ### Run the following commands in the terminal:
 
-  1. curl -s https://github.com/Kozova1/Parsec-Integration-With-RetroPie/blob/master/curlsetup.sh | bash
+  1. curl -s https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/curlsetup.sh | bash
   5. Follow the instructions on screen and when prompted enter your server id.
   6. After the script finishes it's work run the following command: parsec
   7. Login with your parsecgaming.com account and make sure to select "Remember Me".
