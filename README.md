@@ -49,7 +49,7 @@ Then look at the top right corner in the prompt that pops up, and remember the n
   You take full responsibility.
   
 ##  THIS SCRIPT CHANGES A DRIVER IN YOUR SYSTEM
-  If you don't want the driver changed run this command instead of step 4:
+  If you don't want the driver changed run this command instead of step 4:  
   sudo bash setup.sh -nodrv
   
 
