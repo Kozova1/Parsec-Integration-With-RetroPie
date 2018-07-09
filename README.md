@@ -36,7 +36,7 @@ Then look at the top right corner in the prompt that pops up, and remember the n
 ### 2nd method:
 ### Run the following commands in the terminal:
 ```bash
-  1. sudo apt-get install git
+  1. sudo apt install git
   2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
   3. cd Parsec-Integration-With-RetroPie
   4. sudo bash setup.sh -nodrv
