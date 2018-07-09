@@ -46,7 +46,7 @@ echo "ROM File written"
 
 if [ "$1" != "-nodrv" ]
     then
-    sudo apt-get install xboxdrv
+    sudo apt install xboxdrv
     echo "Unneccessary driver removed, Installed better one."
 fi
 
