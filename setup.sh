@@ -49,7 +49,3 @@ if [ "$1" != "-nodrv" ]
     sudo apt install xboxdrv
     echo "Unneccessary driver removed, Installed better one."
 fi
-
-echo " Starting parsec for the 1st time, please login and select Remember My Password"
-
-parsec
