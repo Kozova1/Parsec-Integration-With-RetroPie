@@ -59,4 +59,5 @@ Then look at the top right corner in the prompt that pops up, and remember the n
 
 ## Credits:
 CBNathanael for helping me figure out some parts of the script
+
 DSandler for fixing the multiple entry bug
