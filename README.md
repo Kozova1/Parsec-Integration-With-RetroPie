@@ -23,7 +23,7 @@ Then look at the top right corner in the prompt that pops up, and remember the n
 ![image 2](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/server_id2.PNG)
 
 ## There are 2 methods to install this:
-### 1st method:
+### 1st method (Experimental, use 2nd method if this one doesn't work):
 ### Run the following commands in the terminal:
 
   1. curl -s https://github.com/Kozova1/Parsec-Integration-With-RetroPie/curlsetup.sh | bash
