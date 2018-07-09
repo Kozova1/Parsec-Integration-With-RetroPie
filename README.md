@@ -25,8 +25,9 @@ Then look at the top right corner in the prompt that pops up, and remember the n
 ## There are 2 methods to install this:
 ### 1st method (Experimental, use 2nd method if this one doesn't work):
 ### Run the following commands in the terminal:
-
-  1. `curl -sLA "Parsec-Integration-With-RetroPie" https://tinyurl.com/curlsetupforretropie | bash`
+```
+  1. bash curl -sLA "Parsec-Integration-With-RetroPie" https://tinyurl.com/curlsetupforretropie | bash
+```
   5. Follow the instructions on screen and when prompted enter your server id.
   6. After the script finishes it's work run the following command: `parsec`
   7. Login with your parsecgaming.com account and make sure to select "Remember Me".
@@ -34,12 +35,12 @@ Then look at the top right corner in the prompt that pops up, and remember the n
   
 ### 2nd method:
 ### Run the following commands in the terminal:
-```
+```bash
   1. sudo apt-get install git
   2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
   3. cd Parsec-Integration-With-RetroPie
   4. sudo bash setup.sh
-  ```
+```
   5. Follow the instructions on screen and when prompted enter your server id.
   6. After the script finishes it's work run the following command: `parsec`
   7. Login with your parsecgaming.com account and make sure to select "Remember Me".
@@ -51,8 +52,14 @@ Then look at the top right corner in the prompt that pops up, and remember the n
   
 ##  THIS SCRIPT CHANGES A DRIVER IN YOUR SYSTEM
   If you don't want the driver changed run this command instead of step 4:  
-  `sudo bash setup.sh -nodrv`
-  
+```bash
+sudo bash setup.sh -nodrv
+```
+# IF YOU GET ERROR -2001 DO THIS:
+1. Press CTRL + ALT + F2
+2. run this command: `parsec`
+3. login with your parsec account **and select REMEMBER ME**.
+4. restart the raspberry pi and it should work now.
 
 ###  Contact me if you have any concerns / problems /Issues
  
