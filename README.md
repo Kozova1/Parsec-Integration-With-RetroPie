@@ -3,9 +3,8 @@
 
 
 ## Description
-This is a script for integrating Parsec with RetroPie.
+This is a script for integrating Parsec with RetroPie.  
 Works ONLY on Raspberry Pi. 
-If you have any problems contact me @ Discord Kozova1#1926
 
 # Please Backup your system before running this script
 
