@@ -25,7 +25,7 @@ Then look at the top right corner in the prompt that pops up, and remember the n
 ### 1st method (Experimental, use 2nd method if this one doesn't work):
 ### Run the following commands in the terminal:
 ```bash
-  1. curl -sLA "Parsec-Integration-With-RetroPie" https://tinyurl.com/curlsetupforretropie | bash
+curl -sLA "Parsec-Integration-With-RetroPie" https://tinyurl.com/curlsetupforretropie | bash
 ```
   2. Follow the instructions on screen and when prompted enter your server id.
   3. After the script finishes it's work run the following command: `parsec`
