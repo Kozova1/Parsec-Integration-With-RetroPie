@@ -41,7 +41,7 @@ source <(curl -sLA "Parsec-Integration-With-RetroPie" https://tinyurl.com/curlse
 ```
 Follow the instructions on screen and when prompted enter your server id.  
 After the script finishes it's work run the following command: `parsec`  
-Login with your parsecgaming.com account and make sure to select "Remember Me".  
+Login with your [parsecgaming.com] account and make sure to select "Remember Me".  
 Now you can run Parsec via RetroPie! Have fun gaming!  
   
 # DISCLAIMER
