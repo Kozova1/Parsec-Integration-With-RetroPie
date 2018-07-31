@@ -36,6 +36,14 @@ if [ -d ~pi/.emulationstation/themes/carbon ]; then
   cp -Rf ./carbon/. ~pi/.emulationstation/themes/carbon
   echo "Carbon theme altered to fit Parsec in /etc"
 fi
+if [ -d /etc/emulationstation/themes/pixel ]; then
+  sudo cp -Rf ./carbon/. /etc/emulationstation/themes/pixel/
+  echo "Pixel theme altered to fit Parsec in ~pi"
+fi
+if [ -d ~pi/.emulationstation/themes/pixel ]; then
+  cp -Rf ./carbon/. ~pi/.emulationstation/themes/pixel
+  echo "Pixel theme altered to fit Parsec in /etc"
+fi
 
 echo "Type your server ID now"
 read REPLY
