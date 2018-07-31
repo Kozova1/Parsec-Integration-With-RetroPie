@@ -60,3 +60,4 @@ Pixel theme for EmulationStation
 Carbon theme for EmulationStation  
 RetroPie Project  
 DSandler for fixing the multiple entry bug  
+SH icon in logo Designed by Freepik from www.flaticon.com
