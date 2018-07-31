@@ -60,5 +60,7 @@ Now you can run Parsec via RetroPie! Have fun gaming!
 
 ## Credits:
 CBNathanael for helping me figure out some parts of the script
-
+Pixel theme for EmulationStation
+Carbon theme for EmulationStation
+RetroPie Project
 DSandler for fixing the multiple entry bug
