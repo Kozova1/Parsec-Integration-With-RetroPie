@@ -1,5 +1,5 @@
 # A Parsec Integration With RetroPie Script
-![image_3](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/RetroPie-Parsec.logo.svg)
+![image_3](https://github.com/Kozova1/Parsec-Integration-With-RetroPie/blob/master/RetroPie-Parsec.logo.svg)
 ## Please read ALL of the information here
 
 
