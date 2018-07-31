@@ -52,12 +52,12 @@ Now you can run Parsec via RetroPie! Have fun gaming!
 1. Press CTRL + ALT + F2
 2. run this command: `parsec`
 3. login with your parsec account **and select REMEMBER ME**.
-4. restart the raspberry pi and it should work now.
+4. restart the raspberry pi and it should work now.  
+(Bonus): Figure out how to use my parsec theme yourself.
 
 ###  Contact me if you have any concerns / problems /Issues
  
   Discord: Kozova1 #1926
-
 ## Credits:
 CBNathanael for helping me figure out some parts of the script
 Pixel theme for EmulationStation
