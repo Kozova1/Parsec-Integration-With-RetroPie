@@ -4,7 +4,7 @@
 
 This is a script for integrating Parsec with RetroPie.  
 Works ONLY on Raspberry Pi. 
-
+At the moment the script only supports the Carbon and Pixel Themes
 # Please Backup your system before running this script
 
 ## Installation
