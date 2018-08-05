@@ -11,9 +11,13 @@ At the moment the script only supports the Carbon and Pixel Themes
 
 ## Installation
 
-First find out your server id by clicking on the Manage button under the wanted server name in the Host's Parsec app.  
+### First find out your server id by clicking on the Manage button under the wanted server name in the Host's Parsec app.  
 ![image 1](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/parsec_1.png)  
-Then look at the top right corner in the prompt that pops up, and write down the number.  
+
+
+### Then look at the top right corner in the prompt that pops up, and write down the number.
+
+
 ![image 2](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/parsec_2.png)
 
 ## There are 2 methods to install this:
