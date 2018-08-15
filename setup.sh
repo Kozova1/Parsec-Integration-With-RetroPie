@@ -49,7 +49,7 @@ echo "Type your server ID now"
 read REPLY
 mkdir -p ~pi/RetroPie/roms/parsec
 cd ~pi/RetroPie/roms/parsec/
-echo -n "parsecd server_id=$REPLY">Parsec.sh
+echo -n "parsec server_id=$REPLY">Parsec.sh
 echo "ROM File written"
 
 if [ "$1" != "-nodrv" ]
