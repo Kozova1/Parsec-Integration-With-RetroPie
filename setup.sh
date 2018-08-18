@@ -14,8 +14,8 @@ rm -rf ~pi/.emulationstation/themes/carbon/parsec
 
 if [ -e ~pi/.emulationstation/es_systems.cfg ]; then
   # don't want to add it twice
-  if ! grep -q '<name>Parsec</name>' ~pi/.emulationstation/es_systems.cfg; then
-    sed -i '$e cat parsec.cfg' ~pi/.emulationstation/es_systems.cfg
+  if ! grep -q '<name>Parsec</name>' ~/.emulationstation/es_systems.cfg; then
+    sed -i '$e cat parsec.cfg' ~/.emulationstation/es_systems.cfg
     echo "Parsec entry added to EmulationStation in ~pi"
   fi
 fi
@@ -32,23 +32,23 @@ if [ -d /etc/emulationstation/themes/carbon ]; then
   sudo cp -Rf ./carbon/. /etc/emulationstation/themes/carbon/
   echo "Carbon theme altered to fit Parsec in ~pi"
 fi
-if [ -d ~pi/.emulationstation/themes/carbon ]; then
-  cp -Rf ./carbon/. ~pi/.emulationstation/themes/carbon
+if [ -d ~/.emulationstation/themes/carbon ]; then
+  cp -Rf ./carbon/. ~/.emulationstation/themes/carbon
   echo "Carbon theme altered to fit Parsec in /etc"
 fi
 if [ -d /etc/emulationstation/themes/pixel ]; then
   sudo cp -Rf ./carbon/. /etc/emulationstation/themes/pixel/
   echo "Pixel theme altered to fit Parsec in ~pi"
 fi
-if [ -d ~pi/.emulationstation/themes/pixel ]; then
-  cp -Rf ./carbon/. ~pi/.emulationstation/themes/pixel
+if [ -d ~/.emulationstation/themes/pixel ]; then
+  cp -Rf ./carbon/. ~/.emulationstation/themes/pixel
   echo "Pixel theme altered to fit Parsec in /etc"
 fi
 
 echo "Type your server ID now"
 read REPLY
-mkdir -p ~pi/RetroPie/roms/parsec
-cd ~pi/RetroPie/roms/parsec/
+mkdir -p ~/RetroPie/roms/parsec
+cd ~/RetroPie/roms/parsec/
 echo -n "parsec server_id=$REPLY">Parsec.sh
 echo "ROM File written"
 
