@@ -10,12 +10,10 @@ echo "Made by Kozova1"
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
 
-echo "Type your server ID now"
-read REPLY
-mkdir -p ~/RetroPie/roms/parsec
-cd ~/RetroPie/roms/parsec/
-echo -n "parsec server_id=$REPLY">Parsec.sh
-echo "ROM File written"
+cd ~/RetroPie/roms/ports/
+echo '#!/bin/bash' > Parsec.sh
+echo 'y\n1\n' >> Parsec.sh
+echo "Port file written"
 
 if [ "$1" != "-nodrv" ]
     then
