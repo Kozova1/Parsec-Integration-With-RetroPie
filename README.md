@@ -45,8 +45,9 @@ Login with your [parsec](https://parsecgaming.com) account and make sure to sele
 Now you can run Parsec via RetroPie! Have fun gaming!  
   
 # DISCLAIMER
-  I am not responsible for any loss of data, hardware etc.
-  You take full responsibility.
+1. I am not responsible for any loss of data, hardware etc. You take full responsibility.
+2. Setup.sh alters your installation such that **future updates of RetroPie will not effect es_systems.cfg**.
+> Note: in the future, you will have to manually update /home/pi/.emulationstation/es_systems.cfg, as it will not be overwritten by RetroPie updates.
   
 # IF YOU GET ERROR -2001 DO THIS:
 1. Press CTRL + ALT + F2
