@@ -45,11 +45,12 @@ if [ -d ~/.emulationstation/themes/pixel ]; then
   echo "Pixel theme altered to fit Parsec in /etc"
 fi
 
-echo "Type your server ID now"
-read REPLY
 mkdir -p ~/RetroPie/roms/parsec
 cd ~/RetroPie/roms/parsec/
-echo -n "parsec server_id=$REPLY">Parsec.sh
+echo 'sudo parsec << EOF' >> Parsec.sh
+echo 'y\n' >> Parsec.sh
+echo '1\n' >> Parsec.sh
+echo 'EOF' >> Parsec.sh
 echo "ROM File written"
 
 if [ "$1" != "-nodrv" ]
