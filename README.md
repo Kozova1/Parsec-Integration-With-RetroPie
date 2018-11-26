@@ -27,7 +27,7 @@ At the moment the script only supports the Carbon and Pixel Themes
 wget -O curlsetup.sh https://tinyurl.com/curlsetupforretropie && source curlsetup.sh
 ```
   2. Follow the instructions on screen and when prompted enter your server id.
-  3. After the script finishes it's work run the following command: `sudo parsecd`
+  3. After the script finishes it's work run the following command: `sudo parsec`
   4. Login with your [parsec](https://parsecgaming.com) account and make sure to select "Remember Me".
   5. Now you can run Parsec via RetroPie! Have fun gaming!
   
@@ -40,17 +40,19 @@ wget -O curlsetup.sh https://tinyurl.com/curlsetupforretropie && source curlsetu
   4. sudo bash setup.sh -nodrv
 ```
 Follow the instructions on screen and when prompted enter your server id.  
-After the script finishes it's work run the following command: `sudo parsecd`  
+After the script finishes it's work run the following command: `sudo parsec`  
 Login with your [parsec](https://parsecgaming.com) account and make sure to select "Remember Me".  
 Now you can run Parsec via RetroPie! Have fun gaming!  
   
 # DISCLAIMER
-  I am not responsible for any loss of data, hardware etc.
-  You take full responsibility.
+1. I am not responsible for any loss of data, hardware etc. You take full responsibility.
+2. Setup.sh alters your installation such that **future updates of RetroPie will not effect es_systems.cfg**. If this is not desirable, use port_setup.sh in step 4 in the 2nd installation method instead setup.sh. This will add a Parsec option in the Ports menu of RetroPie.
+> Note: in the future, you will have to manually update /home/pi/.emulationstation/es_systems.cfg, as it will not be overwritten by RetroPie updates.
+
   
 # IF YOU GET ERROR -2001 DO THIS:
 1. Press CTRL + ALT + F2
-2. run this command: `sudo parsecd`
+2. run this command: `sudo parsec`
 3. login with your parsec account **and select REMEMBER ME**.
 4. restart the raspberry pi and it should work now.  
 (Bonus): Figure out how to use my parsec theme yourself.
