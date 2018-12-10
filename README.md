@@ -39,7 +39,7 @@ wget -O curlsetup.sh https://tinyurl.com/curlsetupforretropie && source curlsetu
   3. cd Parsec-Integration-With-RetroPie
   4. sudo bash setup.sh -nodrv
 ```
-Follow the instructions on screen and when prompted enter your server id.  
+Follow the instructions on screen.
 After the script finishes it's work run the following command: `sudo parsec`  
 Login with your [parsec](https://parsecgaming.com) account and make sure to select "Remember Me".  
 Now you can run Parsec via RetroPie! Have fun gaming!  
