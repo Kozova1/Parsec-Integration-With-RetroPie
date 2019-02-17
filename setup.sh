@@ -51,6 +51,7 @@ echo 'sudo parsec << EOF' >> Parsec.sh
 echo 'y\n' >> Parsec.sh
 echo '1\n' >> Parsec.sh
 echo 'EOF' >> Parsec.sh
+chmod a+x Parsec.sh
 echo "ROM File written"
 
 if [ "$1" != "-nodrv" ]
