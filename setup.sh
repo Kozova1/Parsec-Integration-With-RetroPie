@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ ! -e ./parsec.cfg ]; then
     echo "error: run this script from the Parsec-Integration-With-RetroPie directory"
@@ -45,11 +45,12 @@ if [ -d ~/.emulationstation/themes/pixel ]; then
   echo "Pixel theme altered to fit Parsec in /etc"
 fi
 
-
+echo "What is the server id?: "
+read S_ID
 
 mkdir -p ~/RetroPie/roms/parsec
 cd ~/RetroPie/roms/parsec/
-#echo 'sudo parsec server_id=<< EOF' >> Parsec.sh
+echo 'sudo parsec server_id=$S_ID<< EOF' >> Parsec.sh
 echo 'y\n' >> Parsec.sh
 echo '1\n' >> Parsec.sh
 echo 'EOF' >> Parsec.sh
