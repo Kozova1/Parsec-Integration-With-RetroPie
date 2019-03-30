@@ -45,17 +45,14 @@ if [ -d ~/.emulationstation/themes/pixel ]; then
   echo "Pixel theme altered to fit Parsec in /etc"
 fi
 
+
+
 mkdir -p ~/RetroPie/roms/parsec
 cd ~/RetroPie/roms/parsec/
-echo 'sudo parsec << EOF' >> Parsec.sh
+#echo 'sudo parsec server_id=<< EOF' >> Parsec.sh
 echo 'y\n' >> Parsec.sh
 echo '1\n' >> Parsec.sh
 echo 'EOF' >> Parsec.sh
 chmod a+x Parsec.sh
 echo "ROM File written"
 
-if [ "$1" != "-nodrv" ]
-    then
-    sudo apt install xboxdrv
-    echo "Unneccessary driver removed, Installed better one."
-fi
