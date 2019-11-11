@@ -24,7 +24,7 @@ At the moment the script only supports the Carbon and Pixel Themes
 ### 1st method (Experimental, use 2nd method if this one doesn't work):
 ### Run the following commands in the terminal:
 ```bash
-wget -O curlsetup.sh https://tinyurl.com/curlsetupforretropie && source curlsetup.sh
+wget https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/curlsetup.sh && sh curlsetup.sh
 ```
   2. Follow the instructions on screen and when prompted enter your server id.
   3. After the script finishes it's work run the following command: `sudo parsec`
