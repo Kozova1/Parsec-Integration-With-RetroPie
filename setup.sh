@@ -50,7 +50,7 @@ read S_ID
 
 mkdir -p ~/RetroPie/roms/parsec
 cd ~/RetroPie/roms/parsec/
-echo 'sudo parsec server_id=$S_ID<< EOF' >> Parsec.sh
+echo "parsec server_id=$S_ID<< EOF" >> Parsec.sh
 echo 'y\n' >> Parsec.sh
 echo '1\n' >> Parsec.sh
 echo 'EOF' >> Parsec.sh

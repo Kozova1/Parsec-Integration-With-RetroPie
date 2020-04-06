@@ -37,10 +37,10 @@ wget https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/
   1. sudo apt install git
   2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
   3. cd Parsec-Integration-With-RetroPie
-  4. sudo bash setup.sh -nodrv
+  4. bash setup.sh -nodrv
 ```
 Follow the instructions on screen.
-After the script finishes it's work run the following command: `sudo parsec`  
+After the script finishes it's work run the following command: `parsec`  
 Login with your [parsec](https://parsecgaming.com) account and make sure to select "Remember Me".  
 Now you can run Parsec via RetroPie! Have fun gaming!  
   
@@ -57,9 +57,7 @@ Now you can run Parsec via RetroPie! Have fun gaming!
 4. restart the raspberry pi and it should work now.  
 (Bonus): Figure out how to use my parsec theme yourself.
 
-###  Contact me if you have any concerns / problems /Issues
- 
-  Discord: Kozova1 #1926
+### File an issue if you have any problems
 ## Credits:
 CBNathanael for helping me figure out some parts of the script  
 Pixel theme for EmulationStation  

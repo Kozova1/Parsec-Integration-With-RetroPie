@@ -10,9 +10,13 @@ echo "Made by Kozova1"
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
 
+echo "What is the server id?: "
+read S_ID
+
+mkdir -p ~/RetroPie/roms/ports/
 cd ~/RetroPie/roms/ports/
 echo '#!/bin/bash' > Parsec.sh
-echo 'sudo parsec << EOF' >> Parsec.sh
+echo "parsec server_id=$S_ID << EOF" >> Parsec.sh
 echo 'y\n' >> Parsec.sh
 echo '1\n' >> Parsec.sh
 echo 'EOF' >> Parsec.sh
