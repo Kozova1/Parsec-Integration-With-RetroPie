@@ -11,15 +11,17 @@ wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
 
 echo "What is the server id?: "
-read S_ID
+read -r S_ID
 
 mkdir -p ~/RetroPie/roms/ports/
-cd ~/RetroPie/roms/ports/
+cd ~/RetroPie/roms/ports/ || (echo "mkdir -p $HOME/RetroPie/roms/ports failed"; exit)
 echo '#!/bin/bash' > Parsec.sh
-echo "parsec server_id=$S_ID << EOF" >> Parsec.sh
-echo 'y\n' >> Parsec.sh
-echo '1\n' >> Parsec.sh
-echo 'EOF' >> Parsec.sh
+{
+	printf "parsec server_id=%s << EOF" "$S_ID"
+	printf "y\n"
+	printf "1\n"
+	echo "EOF"
+} >> Parsec.sh
 chmod a+x Parsec.sh
 echo "Port file written"
 

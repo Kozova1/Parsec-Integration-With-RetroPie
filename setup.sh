@@ -15,7 +15,7 @@ rm -rf ~pi/.emulationstation/themes/carbon/parsec
 if [ -e ~pi/.emulationstation/es_systems.cfg ]; then
   # don't want to add it twice
   if ! grep -q '<name>Parsec</name>' ~/.emulationstation/es_systems.cfg; then
-    sed -i '$e cat parsec.cfg' ~/.emulationstation/es_systems.cfg
+    sed -i "\$e cat parsec.cfg" ~/.emulationstation/es_systems.cfg
     echo "Parsec entry added to EmulationStation in ~pi"
   fi
 fi
@@ -23,7 +23,7 @@ fi
 if [ -e /etc/emulationstation/es_systems.cfg ]; then
   # same as above: don't want to add it twice
   if ! grep -q '<name>Parsec</name>' /etc/emulationstation/es_systems.cfg; then
-    sudo sed -i '$e cat parsec.cfg' /etc/emulationstation/es_systems.cfg
+    sudo sed -i "\$e cat parsec.cfg" /etc/emulationstation/es_systems.cfg
     echo "Parsec entry added to EmulationStation in /etc"
   fi
 fi
@@ -46,14 +46,16 @@ if [ -d ~/.emulationstation/themes/pixel ]; then
 fi
 
 echo "What is the server id?: "
-read S_ID
+read -r S_ID
 
 mkdir -p ~/RetroPie/roms/parsec
-cd ~/RetroPie/roms/parsec/
-echo "parsec server_id=$S_ID<< EOF" >> Parsec.sh
-echo 'y\n' >> Parsec.sh
-echo '1\n' >> Parsec.sh
-echo 'EOF' >> Parsec.sh
+cd ~/RetroPie/roms/parsec/ || (echo "mkdir -p $HOME/RetroPie/roms/parsec failed"; exit)
+{
+	printf "parsec server_id=%s << EOF" "$S_ID"
+	printf "y\n"
+	printf "1\n"
+	echo "EOF"
+} >> Parsec.sh
 chmod a+x Parsec.sh
 echo "ROM File written"
 

@@ -1,5 +1,5 @@
 sudo apt install git -y
-cd ~pi/
+cd ~pi/ || exit
 git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
-cd Parsec-Integration-With-RetroPie
-sudo bash setup.sh -nodrv
+cd Parsec-Integration-With-RetroPie || exit
+bash setup.sh -nodrv
