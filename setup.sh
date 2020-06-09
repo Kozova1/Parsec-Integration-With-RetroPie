@@ -5,7 +5,7 @@ if [ ! -e ./parsec.cfg ]; then
     exit 1
 fi
 
-echo "Made by Kozova1"
+echo "Made by Kozova1, updated for 2020 by Advanttage."
 
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
@@ -45,17 +45,16 @@ if [ -d ~/.emulationstation/themes/pixel ]; then
   echo "Pixel theme altered to fit Parsec in /etc"
 fi
 
-echo "What is the server id?: "
+echo "What is the Peer ID?: "
 read -r S_ID
 
 mkdir -p ~/RetroPie/roms/parsec
 cd ~/RetroPie/roms/parsec/ || (echo "mkdir -p $HOME/RetroPie/roms/parsec failed"; exit)
 {
-	printf "parsec server_id=%s << EOF" "$S_ID"
-	printf "y\n"
-	printf "1\n"
-	echo "EOF"
+        printf "parsecd server_id=%s << EOF" "$S_ID"
+        printf "y\n"
+        printf "1\n"
+        echo "EOF"
 } >> Parsec.sh
 chmod a+x Parsec.sh
 echo "ROM File written"
-
