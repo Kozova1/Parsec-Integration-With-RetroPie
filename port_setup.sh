@@ -17,7 +17,7 @@ mkdir -p ~/RetroPie/roms/ports/
 cd ~/RetroPie/roms/ports/ || (echo "mkdir -p $HOME/RetroPie/roms/ports failed"; exit)
 echo '#!/bin/bash' > Parsec.sh
 {
-	printf "parsec server_id=%s << EOF" "$S_ID"
+	printf "parsecd server_id=%s << EOF" "$S_ID"
 	printf "y\n"
 	printf "1\n"
 	echo "EOF"
