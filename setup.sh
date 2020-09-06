@@ -51,10 +51,10 @@ read -r S_ID
 mkdir -p ~/RetroPie/roms/parsec
 cd ~/RetroPie/roms/parsec/ || (echo "mkdir -p $HOME/RetroPie/roms/parsec failed"; exit)
 {
-        printf "parsecd server_id=%s << EOF" "$S_ID"
-        printf "y\n"
-        printf "1\n"
-        echo "EOF"
+	printf "parsecd server_id=%s << EOF" "$S_ID"
+	printf "y\n"
+	printf "1\n"
+	echo "EOF"
 } >> Parsec.sh
 chmod a+x Parsec.sh
 echo "ROM File written"
