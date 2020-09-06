@@ -27,7 +27,7 @@ At the moment the script only supports the Carbon and Pixel Themes
 wget https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/curlsetup.sh && sh curlsetup.sh
 ```
   2. Follow the instructions on screen and when prompted enter your server id.
-  3. After the script finishes it's work run the following command: `sudo parsec`
+  3. After the script finishes it's work run the following command: `parsec`
   4. Login with your [parsec](https://parsecgaming.com) account and make sure to select "Remember Me".
   5. Now you can run Parsec via RetroPie! Have fun gaming!
   
@@ -52,7 +52,7 @@ Now you can run Parsec via RetroPie! Have fun gaming!
   
 # IF YOU GET ERROR -2001 DO THIS:
 1. Press CTRL + ALT + F2
-2. run this command: `sudo parsec`
+2. run this command: `parsec`
 3. login with your parsec account **and select REMEMBER ME**.
 4. restart the raspberry pi and it should work now.  
 (Bonus): Figure out how to use my parsec theme yourself.
