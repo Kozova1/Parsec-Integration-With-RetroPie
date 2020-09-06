@@ -5,12 +5,12 @@ if [ ! -e ./parsec.cfg ]; then
     exit 1
 fi
 
-echo "Made by Kozova1"
+echo "Made by Kozova1, modified for 2020 by Advanttage"
 
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
 
-echo "What is the server id?: "
+echo "What is the peer id?: "
 read -r S_ID
 
 mkdir -p ~/RetroPie/roms/ports/
