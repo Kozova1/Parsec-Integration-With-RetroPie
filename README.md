@@ -1,5 +1,5 @@
 # A Parsec Integration With RetroPie Script
-<img src="https://github.com/advanttage/Parsec-Integration-With-RetroPie/blob/master/RetroPie-Parsec.logo.svg" alt="The Logo" width="1600" height="400">
+<img src="https://github.com/Kozova1/Parsec-Integration-With-RetroPie/blob/master/RetroPie-Parsec.logo.svg" alt="The Logo" width="1600" height="400">
 
 ## Please read ALL of the information here
 
@@ -12,19 +12,19 @@ At the moment the script only supports the Carbon and Pixel Themes
 ## Installation
 
 ### First find out your Peer id by clicking on the Computers Tab in the Parsec app.
-![image 1](https://raw.githubusercontent.com/advanttage/Parsec-Integration-With-RetroPie/master/parsec_1.png)
+![image 1](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/parsec_1.png)
 
 
 ### Right clicking on the Computer you want to connect to. Left clicking on the Peer ID will copy it. Write down the number if you like. It IS case sensitive.
 
 
-![image 2](https://raw.githubusercontent.com/advanttage/Parsec-Integration-With-RetroPie/master/parsec_2.png)
+![image 2](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/parsec_2.png)
 
 ## There are 2 methods to install this:
 ### 1st method (Experimental, use 2nd method if this one doesn't work):
 ### Run the following commands in the terminal:
 ```bash
-wget https://raw.githubusercontent.com/advanttage/Parsec-Integration-With-RetroPie/master/curlsetup.sh && sh curlsetup.sh
+wget https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/curlsetup.sh && sh curlsetup.sh
 ```
   Follow the instructions on screen and when prompted enter your Peer ID.
   After the script finishes it's work it's recommended to restart 'EmulationStation' or your Raspberry Pi.
@@ -38,7 +38,7 @@ wget https://raw.githubusercontent.com/advanttage/Parsec-Integration-With-RetroP
 ### Run the following commands in the terminal:
 ```bash
   1. sudo apt install git
-  2. git clone https://github.com/advanttage/Parsec-Integration-With-RetroPie.git
+  2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
   3. cd Parsec-Integration-With-RetroPie
   4. bash setup.sh -nodrv
 ```
@@ -64,12 +64,13 @@ Now you can run Parsec via RetroPie! Have fun gaming!
 
 ### File an issue if you have any problems
 ## Credits:
-CBNathanael for helping me figure out some parts of the script
-Pixel theme for EmulationStation
-Carbon theme for EmulationStation
-RetroPie Project
-DSandler for fixing the multiple entry bug
-SH icon in logo Designed by Freepik from www.flaticon.com
-Kosova1 for the initial script design
-Left Arrow icon designed by Roundicons from www.flaticon.com
-Right Click Of The Mouse icon designed by Freepik from www.flaticon.com
+CBNathanael for helping me figure out some parts of the script  
+Pixel theme for EmulationStation  
+Carbon theme for EmulationStation  
+RetroPie Project  
+DSandler for fixing the multiple entry bug  
+SH icon in logo Designed by Freepik from www.flaticon.com  
+Kosova1 for writing most of the script  
+advanttage for providing updated images for the README, thank you!  
+Left Arrow icon designed by Roundicons from www.flaticon.com  
+Right Click Of The Mouse icon designed by Freepik from www.flaticon.com  
