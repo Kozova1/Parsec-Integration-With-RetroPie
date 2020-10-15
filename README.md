@@ -32,7 +32,7 @@ wget https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/
   1. sudo apt install git
   2. git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git
   3. cd Parsec-Integration-With-RetroPie
-  4. bash setup.sh -nodrv
+  4. ./setup.sh -nodrv
 ```
 Follow the instructions on screen.
 After the script finishes it's work it's recommended to restart 'EmulationStation' or your Raspberry Pi.
