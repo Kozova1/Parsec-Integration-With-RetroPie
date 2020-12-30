@@ -30,7 +30,7 @@ Click Connect on your desired PC.
 
 # DISCLAIMER
 1. I am not responsible for any loss of data, hardware etc. You take full responsibility.
-2. Setup.sh alters your installation such that **future updates of RetroPie will not effect es_systems.cfg**. If this is not desirable, use port_setup.sh in step 4 in the 2nd installation method instead setup.sh. This will add a Parsec option in the Ports menu of RetroPie.
+2. Setup.sh alters your installation such that **future updates of RetroPie will not effect es_systems.cfg**.
 > Note: in the future, you will have to manually update /home/pi/.emulationstation/es_systems.cfg, as it will not be overwritten by RetroPie updates.
 
 ## Credits:
