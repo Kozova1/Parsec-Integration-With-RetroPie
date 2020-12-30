@@ -5,14 +5,17 @@ This is a script for integrating Parsec with RetroPie.
 At the moment the script only supports the Carbon and Pixel Themes.
 
 ## Installation
-### First find out your Peer id by clicking on the Computers Tab in the Parsec app.
+First find out your Peer id by clicking on the Computers Tab in the Parsec app.
 ![image 1](./.github/parsec_1.png)
 
-### And right clicking on the Computer you want to connect to. Left clicking on the Peer ID will copy it. Write down the number if you like. It IS case sensitive.
+And right clicking on the Computer you want to connect to.  
+Left clicking on the Peer ID will copy it.  
+Write down the number if you like.  
+***Warning***: the ID is case sensitive.  
 
 ![image 2](./.github/parsec_2.png)
 
-### Run the following command in the terminal:
+Run the following command in the terminal:  
 ```bash
 $ curl -fsSL https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/curlsetup.sh | sh
 ```
