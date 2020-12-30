@@ -1,5 +1,5 @@
 # A Parsec Integration With RetroPie Script
-<img src="https://github.com/Kozova1/Parsec-Integration-With-RetroPie/blob/master/RetroPie-Parsec.logo.svg" alt="The Logo" width="1600" height="400">
+<img src="./.github/RetroPie-Parsec.logo.svg" alt="The Logo" width="1600" height="400">
 
 ## Please read ALL of the information here
 
@@ -12,13 +12,13 @@ At the moment the script only supports the Carbon and Pixel Themes
 ## Installation
 
 ### First find out your Peer id by clicking on the Computers Tab in the Parsec app.
-![image 1](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/parsec_1.png)
+![image 1](./.github/parsec_1.png)
 
 
 ### Right clicking on the Computer you want to connect to. Left clicking on the Peer ID will copy it. Write down the number if you like. It IS case sensitive.
 
 
-![image 2](https://raw.githubusercontent.com/Kozova1/Parsec-Integration-With-RetroPie/master/parsec_2.png)
+![image 2](./.github/parsec_2.png)
 
 ## There are 2 methods to install this:
 ### 1st method (Experimental, use 2nd method if this one doesn't work):
