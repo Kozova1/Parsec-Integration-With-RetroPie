@@ -1,11 +1,15 @@
 #!/bin/sh
 
-if [ ! -e ./parsec.cfg ]; then
-    echo "error: run this script from the Parsec-Integration-With-RetroPie directory"
-    exit 1
-fi
-
-echo "Made by Kozova1, updated for 2020 by Advanttage."
+PARSEC_CFG="
+<system>
+    <name>Parsec</name>
+    <fullname>ParsecGaming.com Streaming Service</fullname>
+    <path>/home/pi/RetroPie/roms/parsec</path>
+    <extension>.sh .SH .sH .Sh</extension>
+    <command>bash %ROM%</command>
+    <platform>Parsec</platform>
+    <theme>parsec</theme>
+</system>"
 
 wget https://s3.amazonaws.com/parsec-build/package/parsec-rpi.deb
 sudo dpkg -i parsec-rpi.deb
@@ -15,7 +19,7 @@ rm -rf ~pi/.emulationstation/themes/carbon/parsec
 if [ -e ~pi/.emulationstation/es_systems.cfg ]; then
   # don't want to add it twice
   if ! grep -q '<name>Parsec</name>' ~/.emulationstation/es_systems.cfg; then
-    sed -i "\$e cat parsec.cfg" ~/.emulationstation/es_systems.cfg
+    sed -i '\$e printf "$PARSEC_CFG"' ~/.emulationstation/es_systems.cfg
     echo "Parsec entry added to EmulationStation in ~pi"
   fi
 fi
@@ -23,7 +27,7 @@ fi
 if [ -e /etc/emulationstation/es_systems.cfg ]; then
   # same as above: don't want to add it twice
   if ! grep -q '<name>Parsec</name>' /etc/emulationstation/es_systems.cfg; then
-    sudo sed -i "\$e cat parsec.cfg" /etc/emulationstation/es_systems.cfg
+    sudo sed -i '\$e printf "$PARSEC_CFG"' /etc/emulationstation/es_systems.cfg
     echo "Parsec entry added to EmulationStation in /etc"
   fi
 fi
