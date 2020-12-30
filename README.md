@@ -27,13 +27,12 @@ Click Connect on your desired PC.
 2. Setup.sh alters your installation such that **future updates of RetroPie will not effect es_systems.cfg**.
 > Note: in the future, you will have to manually update /home/pi/.emulationstation/es_systems.cfg, as it will not be overwritten by RetroPie updates.
 
-### File an issue if you have any problems
 ## Credits:
-CBNathanael
-EmulationStation  
-RetroPie Project  
-DSandler
-advanttage
-[https://www.flaticon.com](flaticon.com):
-- Freepik - Right click, SH icons
-- Roundicons - Left Arrow icon designed by Roundicons from www.flaticon.com  
+- CBNathanael
+- EmulationStation
+- RetroPie Project
+- DSandler
+- advanttage
+- [https://www.flaticon.com](flaticon.com):
+	- Freepik - Right click, SH icons
+	- Roundicons - Left Arrow icon designed by Roundicons from www.flaticon.com  
