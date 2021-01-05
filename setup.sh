@@ -34,19 +34,19 @@ fi
 
 if [ -d /etc/emulationstation/themes/carbon ]; then
   sudo cp -Rf ./carbon/. /etc/emulationstation/themes/carbon/
-  echo "Carbon theme altered to fit Parsec in ~pi"
+  echo "Carbon theme altered to fit Parsec in /etc"
 fi
 if [ -d ~/.emulationstation/themes/carbon ]; then
   cp -Rf ./carbon/. ~/.emulationstation/themes/carbon
-  echo "Carbon theme altered to fit Parsec in /etc"
+  echo "Carbon theme altered to fit Parsec in ~pi"
 fi
 if [ -d /etc/emulationstation/themes/pixel ]; then
   sudo cp -Rf ./carbon/. /etc/emulationstation/themes/pixel/
-  echo "Pixel theme altered to fit Parsec in ~pi"
+  echo "Pixel theme altered to fit Parsec in /etc"
 fi
 if [ -d ~/.emulationstation/themes/pixel ]; then
   cp -Rf ./carbon/. ~/.emulationstation/themes/pixel
-  echo "Pixel theme altered to fit Parsec in /etc"
+  echo "Pixel theme altered to fit Parsec in ~pi"
 fi
 
 echo "What is the Peer ID?: "
