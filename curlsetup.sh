@@ -1,4 +1,6 @@
 sudo apt install git -y
-cd "$(mktemp -d)" || exit
+TMPDIR=$(mktemp -d)
+cd "$TMPDIR" || exit
 git clone https://github.com/Kozova1/Parsec-Integration-With-RetroPie.git ./
 ./setup.sh
+rm -rf "$TMPDIR"
