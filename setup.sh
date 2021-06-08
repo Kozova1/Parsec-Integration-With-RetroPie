@@ -19,7 +19,9 @@ rm -rf ~pi/.emulationstation/themes/carbon/parsec
 if [ -e ~pi/.emulationstation/es_systems.cfg ]; then
   # don't want to add it twice
   if ! grep -q '<name>Parsec</name>' ~/.emulationstation/es_systems.cfg; then
-    sed -i '\$e printf "$PARSEC_CFG"' ~/.emulationstation/es_systems.cfg
+    #sed to append: $: match last line; e\ execute printf command; using -i, for in-place, to slap it onto es_systems.cfg
+    #there was a backslash typo in the original of '\$e... that shoudl be '$e\...
+    sed -i '$e\ printf "$PARSEC_CFG"' ~/.emulationstation/es_systems.cfg
     echo "Parsec entry added to EmulationStation in ~pi"
   fi
 fi
@@ -27,7 +29,8 @@ fi
 if [ -e /etc/emulationstation/es_systems.cfg ]; then
   # same as above: don't want to add it twice
   if ! grep -q '<name>Parsec</name>' /etc/emulationstation/es_systems.cfg; then
-    sudo sed -i '\$e printf "$PARSEC_CFG"' /etc/emulationstation/es_systems.cfg
+    #there was a backslash typo in the original of '\$e... that shoudl be '$e\...
+    sudo sed -i '$e\ printf "$PARSEC_CFG"' /etc/emulationstation/es_systems.cfg
     echo "Parsec entry added to EmulationStation in /etc"
   fi
 fi
